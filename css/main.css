@@ -1,6 +1,6 @@
 body {
     position: relative;
-    background: #9F171F;
+    background: #9A1212;
 }
 
 .b_1 {
@@ -91,7 +91,7 @@ nav li:first-child {
     content:"";
     height: 100px;
     width: 100%;
-    background: #9F171F;
+    background: #9A1212;
 }
 
 .gray_line {
