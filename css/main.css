@@ -1,0 +1,296 @@
+body {
+    position: relative;
+    background: #9F171F;
+}
+
+.b_1 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+}
+
+.l {
+    position: absolute;
+    min-height: 700px;
+    min-width: 1200px;
+    /* width: 70%; */
+    /* width: auto; */
+    background: url("../images/1.png");
+    background-size: cover;
+    background-position: center;
+    left: 7%;
+    top: 10%;
+    z-index: 0;
+}
+
+nav { 
+    justify-self: end;
+    margin-top: 60px;
+    margin-right: 120px;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    margin: 0 30px;
+}
+
+nav li:last-child {
+    margin-right: 0px;
+}
+
+nav li:first-child {
+    margin-left: 0px;
+    background-size: cover;
+}
+
+
+
+.b_1 span {
+    display: block;
+    color: white;
+    font-size: 90px;
+    text-align: right;
+}
+
+.b_1 p {
+    color: white;
+    width: 600px;
+    font-size: 25px;
+    text-align: right;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: 120px;
+    height: 70vh;
+    margin-top: 80px;
+    z-index: 100;
+}
+
+.b_2 {
+    position: relative;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.red_line {
+    content:"";
+    height: 100px;
+    width: 100%;
+    background: #9F171F;
+}
+
+.gray_line {
+    content: "";
+    height: 40px;
+    width: 100%;
+    background: #F3F3F3;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    margin-top: -60px;
+    margin-left: 60px;
+    z-index: 20;
+}
+
+.news h1{
+    font-size: 80px;
+    margin-left: 250px;
+    margin-bottom: 40px;
+}
+
+.slider > img {
+    height: 80px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+
+}
+
+.a_l {
+    transform: scale(-1, 1);
+}
+
+.s {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s img {
+    /* height: 300px; */
+    width: 230px;
+}
+
+.s span {
+    color: #9F171F;
+    font-size: 40px;
+    width: 200px;
+    text-align: center;
+}
+
+.list-1 {
+    height: 90vh;
+    position: absolute;
+    bottom: 0;
+    right: 16vw;
+}
+
+.list-2 {
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    right: 6vw;
+}
+
+@media screen and (max-width: 1550px) {
+    .l {
+        min-height: 600px;
+        min-width: 1000px;
+    }
+
+    .s img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .l {
+        min-height: 500px;
+        min-width: 900px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .l {
+        display: none;
+    }
+
+    .b_1 {
+        align-items: center;
+    }
+
+    .block {
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .block span, .block p{
+        text-align: center;
+    }
+
+    nav {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .list-1, .list-2{
+        opacity: .5;
+    }
+
+    .news h1 {
+        margin-left: 0;
+        font-size: 60px;
+    }
+
+    .s {
+        margin: 30px;
+    }
+
+    .s img {
+        width: 170px;
+    }
+    .news {
+        margin-left: 0;
+        align-items: center;
+    }
+    .s span {
+        font-size: 30px;
+    }
+
+    .slider > img {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .news a:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .block span {
+        font-size: 70px;
+    }
+
+    .block p {
+        width: 500px;
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 150px;
+        height: 40px;
+    }
+    
+    .b_1 ul li {
+        margin: 20px;
+    }
+    
+    .block {
+        margin-top: 20px;
+    }
+
+    .s {
+        margin: 10px;
+    }
+
+    .news a:nth-child(2) {
+        display: none;
+    }
+
+    .news h1 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav {
+        margin-top: 30px;
+    }
+    .b_1 ul li {
+        margin: 5px;
+    }
+    .btn {
+        height: 30px;
+        width: 105px;
+    }
+    .block span {
+        font-size: 50px;
+    }
+
+    .block p {
+        width: 300px;
+        font-size: 20px;
+    }
+}
